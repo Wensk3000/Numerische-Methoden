@@ -98,11 +98,4 @@ else:
     print("Die Fixpunktiteration erreicht x =", list_fix[1], "nach", i, "Iterationen.")
 
 
-    def funktion_ableitung(x):
-        y = 8*x(4*x**2+2)
-        return y
-
-
-
-
 
