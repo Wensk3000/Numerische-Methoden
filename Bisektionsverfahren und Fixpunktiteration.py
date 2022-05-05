@@ -1,5 +1,4 @@
 # Bisektionsverfahren und Fixpunktiteration
-# Milan Wenske
 # 05.05.2022
 
 import math
