@@ -8,9 +8,11 @@ print("Zum Lösen der Gleichung: y = math.log(2 + 4 * x**2, math.e) - x "
 w = input("Bitte wählen Sie für das Bisektionsverfahren die 1 und für die Fixpunktiteration die 2.")
 w = int(w)
 
+
+#  Bisektionsverfahren
+
 if (w < 2):
 
-    #  Bisektionsverfahren
 
     def funktion(x):
         y = math.log(2 + 4 * x**2, math.e) - x
@@ -71,7 +73,7 @@ if (w < 2):
 
 
 
-## Fixpunktiteration
+# Fixpunktiteration
 
 else:
 
