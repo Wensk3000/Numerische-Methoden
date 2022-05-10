@@ -1,4 +1,4 @@
-# Gradientenabstiegverfahren in Python
+# Gradientenabstiegverfahren
 # Numerische Methoden Praktikum Aufgabe 2
 # Milan Wenske 10.05.2022
 
