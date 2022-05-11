@@ -1,4 +1,4 @@
-# Gradientenabstiegverfahren
+# Gradientenabstiegverfahren in Python
 # Numerische Methoden Praktikum Aufgabe 2
 # Milan Wenske 10.05.2022
 
@@ -41,25 +41,28 @@ i = 0
 
 while i < 100 and (differenz_a1 >= 0.001 or differenz_a2 >= 0.001):
 
-    if differenz_a1 >= 0.001:
-        list_grad_a1[0] = a1
 
-        grad_a1 = grad_a1_def(a1, a2, list_x, list_y)
-        a1 = a1 - (grad_a1 * learning_rate)
+    list_grad_a1[0] = a1
 
-        list_grad_a1[1] = a1
-        differenz_a1 = abs(list_grad_a1[0] - list_grad_a1[1])
+    grad_a1 = grad_a1_def(a1, a2, list_x, list_y)
+    a1 = a1 - (grad_a1 * learning_rate)
 
-    if differenz_a2 >= 0.001:
-        list_grad_a2[0] = a2
+    list_grad_a1[1] = a1
+    differenz_a1 = abs(list_grad_a1[0] - list_grad_a1[1])
 
-        grad_a2 = grad_a2_def(a1, a2, list_x, list_y)
-        a2 = a2 - (grad_a2 * learning_rate)
 
-        list_grad_a2[1] = a2
-        differenz_a2 = abs(list_grad_a2[0] - list_grad_a2[1])
+    list_grad_a2[0] = a2
+
+    grad_a2 = grad_a2_def(a1, a2, list_x, list_y)
+    a2 = a2 - (grad_a2 * learning_rate)
+
+    list_grad_a2[1] = a2
+    differenz_a2 = abs(list_grad_a2[0] - list_grad_a2[1])
 
     i += 1
+
+print("a1", a1)
+print("a2", a2)
 
 list_plot_x = []
 list_plot_y = []
