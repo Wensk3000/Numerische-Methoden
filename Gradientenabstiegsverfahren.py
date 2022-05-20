@@ -39,7 +39,7 @@ differenz_a1 = 1
 differenz_a2 = 2
 i = 0
 
-while i < 100 and (differenz_a1 >= 0.001 or differenz_a2 >= 0.001):
+while i < 100 or (differenz_a1 >= 0.001 or differenz_a2 >= 0.001):
 
 
     list_grad_a1[0] = a1
@@ -61,12 +61,14 @@ while i < 100 and (differenz_a1 >= 0.001 or differenz_a2 >= 0.001):
 
     i += 1
 
+print("i", i)
 print("a1", a1)
 print("a2", a2)
 
 list_plot_x = []
 list_plot_y = []
 x = -2
+
 while x <= 8:
 
     y = a1 * x + a2
@@ -83,3 +85,4 @@ plt.title("Gradientenabstiegverfahren")
 plt.xlabel("x")
 plt.ylabel("y")
 plt.show()
+
